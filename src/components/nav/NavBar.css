@@ -11,5 +11,28 @@
 
 .navbar__logout {
     margin-left: auto;
+    font-size: 1rem;
 }
 
+
+.navbar {
+    background-color: rgb(250, 132, 197);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 1px 3px 4px grey;
+  }
+  
+  #locations-select {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-left: 2rem;
+    background-color: rgb(59, 239, 252);
+  }
+  #nav-banner {
+    flex-basis: 25%;
+    margin-left: auto;
+  }
+  #kk-banner {
+    color: whitesmoke;
+  }
