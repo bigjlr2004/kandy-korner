@@ -11,7 +11,7 @@
 
 .navbar__logout {
     margin-left: auto;
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 
@@ -21,6 +21,7 @@
     padding: 1rem;
     margin: 0.5rem;
     box-shadow: 1px 3px 4px grey;
+    font-size: 20px;
   }
   
   #locations-select {
@@ -33,6 +34,4 @@
     flex-basis: 25%;
     margin-left: auto;
   }
-  #kk-banner {
-    color: whitesmoke;
-  }
+  
