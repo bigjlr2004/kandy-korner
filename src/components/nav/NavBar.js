@@ -1,4 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
+import { CustomerNav } from "./CustomerNav"
+import { EmployeeNav } from "./EmployeeNav"
 import "./NavBar.css"
 
 export const NavBar = ({ locations, setLocation }) => {
@@ -6,39 +8,13 @@ export const NavBar = ({ locations, setLocation }) => {
     const kandyUserObject = JSON.parse(localKandyUser)
 
 
-    const HandleDisplayButtonClick = () => {
-        return fetch(`http://localhost:8089/locations`)
-            .then(response => response.json())
-            .then((data) => {
-                setLocation(data)
-            })
-
-
-
+    if (kandyUserObject.staff) {
+        //return employee navigation
+        return <EmployeeNav />
+    } else {
+        //return customer navigation
+        return <CustomerNav />
     }
-    const navigate = useNavigate()
 
-    return (
-
-        <ul className="navbar">
-            <li className="navbar__item">
-                <Link className="navbar__link" to="/">Home</Link></li>
-
-            <li className="navbar__item">
-                <Link className="navbar__link" to="locations">Locations</Link></li>
-            <li className="navbar__item">
-                <Link className="navbar__link" to="products">Products </Link>    </li>
-            <li className="navbar__item">
-                <Link className={`navbar__link ${(!kandyUserObject.staff) ? "active" : ""}`} to="addProduct">Add Product </Link>    </li>
-
-
-            <li className="navbar__item navbar__logout">
-                <Link className="navbar__link" to="" onClick={() => {
-                    localStorage.removeItem("kandy_user")
-                    navigate("/", { replace: true })
-                }}>Logout</Link>
-            </li>
-        </ul>
-    )
 }
 

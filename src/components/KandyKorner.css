@@ -94,6 +94,8 @@ p {
   background-color: darkorange;
   color: white;
   font-size: 18px;
+  margin-top: 10px;
+  ;
 }
 
 .active {
@@ -110,4 +112,20 @@ p {
 
 .type-box {
   padding: 10px;
+}
+
+.search {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.customer_search {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 500px;
+}
+
+.employeeForm {
+  background-color: rgb(110, 204, 248);
+  padding: 2rem;
 }

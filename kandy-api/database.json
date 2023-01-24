@@ -193,6 +193,12 @@
       "price": "3.39",
       "typeId": 3,
       "id": 13
+    },
+    {
+      "name": "Bitchin Bannana",
+      "price": "7.89",
+      "typeId": 3,
+      "id": 14
     }
   ],
   "types": [
