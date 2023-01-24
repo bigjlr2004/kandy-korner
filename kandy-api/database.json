@@ -53,6 +53,54 @@
       "fullName": "Jeremy Bakker",
       "isStaff": true,
       "id": 7
+    },
+    {
+      "fullName": "haney",
+      "email": "haney@u",
+      "isStaff": "True",
+      "id": 19
+    },
+    {
+      "fullName": "Tiffany",
+      "email": "tiff@u",
+      "isStaff": "True",
+      "id": 20
+    },
+    {
+      "fullName": "Smitty",
+      "email": "smitty@c.com",
+      "isStaff": "True",
+      "id": 21
+    },
+    {
+      "fullName": "99 test",
+      "email": "88@88",
+      "isStaff": "True",
+      "id": 22
+    },
+    {
+      "fullName": "John Roberts",
+      "email": "bigjlr2004@yahoo.com",
+      "isStaff": "True",
+      "id": 23
+    },
+    {
+      "fullName": "Sam Winters",
+      "email": "sw@sw.com",
+      "isStaff": "True",
+      "id": 25
+    },
+    {
+      "fullName": "Sam Stone",
+      "email": "sammy@w.com",
+      "isStaff": "True",
+      "id": 26
+    },
+    {
+      "fullName": "Homer Simpson",
+      "email": "homer@home.com",
+      "isStaff": "True",
+      "id": 27
     }
   ],
   "customers": [
@@ -77,22 +125,57 @@
       "id": 1,
       "startDate": "01/18/22",
       "payRate": 72.47,
-      "location": 1,
+      "locationId": 1,
       "userId": 4
     },
     {
       "id": 2,
       "startDate": "11/23/14",
       "payRate": 26,
-      "location": 2,
+      "locationId": 2,
       "userId": 5
     },
     {
       "id": 3,
       "startDate": "07/18/22",
       "payRate": 15,
-      "location": 3,
+      "locationId": 3,
       "userId": 6
+    },
+    {
+      "userId": 21,
+      "startDate": "2024-01-23",
+      "payRate": "99",
+      "locationId": 3,
+      "id": 4
+    },
+    {
+      "userId": 23,
+      "startDate": "2023-02-12",
+      "payRate": "33",
+      "locationId": 3,
+      "id": 6
+    },
+    {
+      "userId": 25,
+      "startDate": "2024-12-31",
+      "payRate": "29",
+      "locationId": 2,
+      "id": 8
+    },
+    {
+      "userId": 26,
+      "startDate": "2023-04-12",
+      "payRate": "12",
+      "locationId": 2,
+      "id": 9
+    },
+    {
+      "userId": 27,
+      "startDate": "2023-06-13",
+      "payRate": "65",
+      "locationId": 1,
+      "id": 10
     }
   ],
   "locations": [

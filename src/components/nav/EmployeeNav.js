@@ -6,16 +6,7 @@ export const EmployeeNav = ({ locations, setLocation }) => {
     const kandyUserObject = JSON.parse(localKandyUser)
 
 
-    const HandleDisplayButtonClick = () => {
-        return fetch(`http://localhost:8089/locations`)
-            .then(response => response.json())
-            .then((data) => {
-                setLocation(data)
-            })
 
-
-
-    }
     const navigate = useNavigate()
 
     return (
@@ -29,9 +20,17 @@ export const EmployeeNav = ({ locations, setLocation }) => {
             <li className="navbar__item">
                 <Link className="navbar__link" to="products">Products </Link>    </li>
             <li className="navbar__item">
-                <Link className={`navbar__link ${(!kandyUserObject.staff) ? "active" : ""}`} to="addProduct">Add Product </Link>    </li>
+                <Link className="navbar__link" to="addProduct">Add Product </Link>    </li>
             <li className="navbar__item">
-                <Link className={`navbar__link ${(!kandyUserObject.staff) ? "active" : ""}`} to="newEmployee">Human Resources </Link>    </li>
+                <Link className="navbar__link" to="customers">Customers </Link>    </li>
+            <li className="navbar__item">
+                <Link
+                    className={`navbar__link ${(!kandyUserObject.staff) ? "active" : ""}`}
+                    to="newEmployee">New Hire </Link>    </li>
+            <li className="navbar__item">
+                <Link
+                    className={`navbar__link ${(!kandyUserObject.staff) ? "active" : ""}`}
+                    to="employees">Employees </Link>    </li>
 
 
             <li className="navbar__item navbar__logout">

@@ -25,6 +25,7 @@ export const EmployeeHireForm = () => {
                 return setLocations(data)
             })
     }, [])
+
     const handleAddEmployee = (event) => {
         event.preventDefault()
         if (
@@ -40,7 +41,26 @@ export const EmployeeHireForm = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(newUser),
-            })
+            }).then((response) => response.json())
+                .then((returnedData) => {
+                    const copy = { ...newEmployee }
+                    copy.userId = returnedData.id
+                    setNewEmployee(copy)
+                    console.log(copy)
+                    console.log(newEmployee)
+                    fetch('http://localhost:8089/employees', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(copy),
+                    })
+                    navigate("/employees")
+                })
+
+
+
+
 
         } else { alert(`Please complete the form`) }
 
@@ -48,8 +68,9 @@ export const EmployeeHireForm = () => {
 
 
     return (
+
         <div className="employeeForm">
-            <form className="product-form">
+            <form autoComplete="off" className="product-form">
                 <h2>Kandy Korner New Employee</h2>
                 <fieldset>
                     <div className="form-group">
