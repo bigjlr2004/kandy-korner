@@ -13,8 +13,8 @@
       "isStaff": true
     },
     {
-      "id": 1,
-      "fullName": "Customer",
+      "id": 99,
+      "fullName": "Willy Wonka V",
       "email": "cust@u",
       "isStaff": false
     },
@@ -67,12 +67,6 @@
       "id": 20
     },
     {
-      "fullName": "Smitty",
-      "email": "smitty@c.com",
-      "isStaff": "True",
-      "id": 21
-    },
-    {
       "fullName": "99 test",
       "email": "88@88",
       "isStaff": "True",
@@ -83,41 +77,28 @@
       "email": "bigjlr2004@yahoo.com",
       "isStaff": "True",
       "id": 23
-    },
-    {
-      "fullName": "Sam Winters",
-      "email": "sw@sw.com",
-      "isStaff": "True",
-      "id": 25
-    },
-    {
-      "fullName": "Sam Stone",
-      "email": "sammy@w.com",
-      "isStaff": "True",
-      "id": 26
-    },
-    {
-      "fullName": "Homer Simpson",
-      "email": "homer@home.com",
-      "isStaff": "True",
-      "id": 27
     }
   ],
   "customers": [
     {
       "id": 1,
       "userId": 2,
-      "loyaltyNumber": 1
+      "loyaltyNumber": "24"
     },
     {
       "id": 2,
-      "loyaltyNumber": 2,
+      "loyaltyNumber": "44",
       "userId": 1
     },
     {
       "id": 3,
       "loyaltyNumber": 3,
       "userId": 3
+    },
+    {
+      "id": 4,
+      "loyaltyNumber": 355,
+      "userId": 99
     }
   ],
   "employees": [
@@ -143,39 +124,11 @@
       "userId": 6
     },
     {
-      "userId": 21,
-      "startDate": "2024-01-23",
-      "payRate": "99",
-      "locationId": 3,
-      "id": 4
-    },
-    {
       "userId": 23,
       "startDate": "2023-02-12",
       "payRate": "33",
       "locationId": 3,
       "id": 6
-    },
-    {
-      "userId": 25,
-      "startDate": "2024-12-31",
-      "payRate": "29",
-      "locationId": 2,
-      "id": 8
-    },
-    {
-      "userId": 26,
-      "startDate": "2023-04-12",
-      "payRate": "12",
-      "locationId": 2,
-      "id": 9
-    },
-    {
-      "userId": 27,
-      "startDate": "2023-06-13",
-      "payRate": "65",
-      "locationId": 1,
-      "id": 10
     }
   ],
   "locations": [
@@ -299,6 +252,131 @@
     }
   ],
   "purchases": [
-    {}
+    {
+      "userId": 1,
+      "productId": "7",
+      "date": "2023-01-26T10:37:51.309Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "productId": "9",
+      "date": "2023-01-26T10:38:09.917Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "productId": "5",
+      "date": "2023-01-26T10:38:10.981Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "productId": "11",
+      "date": "2023-01-26T10:38:12.061Z",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "productId": "4",
+      "date": "2023-01-26T10:38:12.909Z",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "productId": "4",
+      "date": "2023-01-26T11:14:28.728Z",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "productId": "14",
+      "date": "2023-01-26T11:14:38.193Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "productId": "6",
+      "date": "2023-01-26T11:14:38.853Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "productId": "14",
+      "date": "2023-01-26T11:14:39.965Z",
+      "id": 9
+    },
+    {
+      "userId": 99,
+      "productId": "14",
+      "date": "2023-01-26T11:30:18.277Z",
+      "id": 10
+    },
+    {
+      "userId": 99,
+      "productId": "6",
+      "date": "2023-01-26T11:30:19.029Z",
+      "id": 11
+    },
+    {
+      "userId": 99,
+      "productId": "8",
+      "date": "2023-01-26T11:30:30.126Z",
+      "id": 12
+    },
+    {
+      "userId": 99,
+      "productId": "1",
+      "date": "2023-01-26T11:30:35.805Z",
+      "id": 13
+    },
+    {
+      "userId": 99,
+      "productId": "10",
+      "date": "2023-01-26T11:30:36.501Z",
+      "id": 14
+    },
+    {
+      "userId": 99,
+      "productId": "1",
+      "date": "2023-01-26T11:30:37.389Z",
+      "id": 15
+    },
+    {
+      "userId": 99,
+      "productId": "10",
+      "date": "2023-01-26T11:30:38.021Z",
+      "id": 16
+    },
+    {
+      "userId": 99,
+      "productId": "1",
+      "date": "2023-01-26T11:30:39.381Z",
+      "id": 17
+    },
+    {
+      "userId": 99,
+      "productId": "10",
+      "date": "2023-01-26T11:30:40.029Z",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "productId": "11",
+      "date": "2023-01-26T12:32:34.044Z",
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "productId": "11",
+      "date": "2023-01-26T12:32:34.492Z",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "productId": "11",
+      "date": "2023-01-26T12:32:35.012Z",
+      "id": 21
+    }
   ]
 }

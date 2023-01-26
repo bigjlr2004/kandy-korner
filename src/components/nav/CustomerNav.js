@@ -28,7 +28,10 @@ export const CustomerNav = ({ locations, setLocation }) => {
                 <Link className="navbar__link" to="locations">Locations</Link></li>
 
             <li className="navbar__item">
-                <Link className="navbar__link" to="products/findcandy">Find Candy </Link>    </li>
+                <Link className="navbar__link" to="products/findcandy">Find Candy </Link></li>
+
+            <li className="navbar__item">
+                <Link className="navbar__link" to="orders">My Orders </Link></li>
 
 
             <li className="navbar__item navbar__logout">

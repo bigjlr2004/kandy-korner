@@ -45,9 +45,6 @@ export const EmployeeHireForm = () => {
                 .then((returnedData) => {
                     const copy = { ...newEmployee }
                     copy.userId = returnedData.id
-                    setNewEmployee(copy)
-                    console.log(copy)
-                    console.log(newEmployee)
                     fetch('http://localhost:8089/employees', {
                         method: 'POST',
                         headers: {

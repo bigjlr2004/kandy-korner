@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 export const CustomerProductsList = ({ searchCustomerTerms }) => {
     const [products, setProducts] = useState([])
     const [filteredProducts, setFiltered] = useState([])
+    const localKandyUser = localStorage.getItem("kandy_user")
+    const kandyUserObject = JSON.parse(localKandyUser)
 
     useEffect(
         () => {
@@ -30,6 +32,29 @@ export const CustomerProductsList = ({ searchCustomerTerms }) => {
 
         }, [searchCustomerTerms])
 
+    const handlePurchaseButtonClick = (event) => {
+        event.preventDefault()
+        const newPurchase = {
+            userId: kandyUserObject.id,
+            productId: event.target.value,
+            date: new Date()
+        }
+
+        return fetch('http://localhost:8089/purchases', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newPurchase),
+        })
+            .then(response => response.json())
+            .then(() => {
+
+            })
+
+    }
+
+
 
     return (<>
         <div
@@ -42,7 +67,11 @@ export const CustomerProductsList = ({ searchCustomerTerms }) => {
                     <div key={product.id} className="product-card">
                         <div className="product-card-name">{product.name}</div>
                         <div>$ {product.price}</div>
-
+                        <button value={product.id}
+                            onClick={(clickEvent) => { handlePurchaseButtonClick(clickEvent) }}
+                            className="btn btn-primary">
+                            Purchase
+                        </button>
                     </div>
                 )
             })}
